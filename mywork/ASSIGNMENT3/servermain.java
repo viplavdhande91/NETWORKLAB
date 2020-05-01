@@ -41,7 +41,7 @@ public class servermain
 try{	
 
        
-	       displayfileserver fs = new displayfileserver();
+	      // displayfileserver fs = new displayfileserver();
 
 
 
@@ -54,7 +54,7 @@ try{
  
             
 
-            fs.displayser();
+          //  fs.displayser();
             b1b4.start();
             a2a3.start();
 }

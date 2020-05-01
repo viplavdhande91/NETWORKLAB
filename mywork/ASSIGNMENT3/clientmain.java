@@ -44,7 +44,7 @@ public class clientmain
 	try{ 
         
 
-        displayfileclient fc = new displayfileclient();
+       // displayfileclient fc = new displayfileclient();
           
           b2b3 objectb2b3 = new b2b3();  
           Thread b2b3= new Thread(objectb2b3);  
@@ -53,7 +53,7 @@ public class clientmain
           Thread a1a4= new Thread(objecta1a4); 
 
           
-            fc.displaycli();
+         //   fc.displaycli();
             a1a4.start();    
             b2b3.start();
 
