@@ -41,22 +41,22 @@ public class servermain
 try{	
 
        
-	      // displayfileserver fs = new displayfileserver();
+	      displayfileserver fs = new displayfileserver();
 
 
 
-	       b1b4 objectb1b4 = new b1b4();  
-          Thread b1b4= new Thread(objectb1b4);  
+	       server2 serverobj2 = new server2();  
+          Thread serverthread2= new Thread(serverobj2);  
 
-           a2a3 objecta2a3 = new a2a3();  
-          Thread a2a3= new Thread(objecta2a3); 
+           server1 serverobj1 = new server1();  
+          Thread serverthread1= new Thread(serverobj1); 
 
  
             
 
-          //  fs.displayser();
-            b1b4.start();
-            a2a3.start();
+           fs.displayser();
+            serverthread2.start();
+            serverthread1.start();
 }
 
 catch (Exception e) {

@@ -66,7 +66,7 @@ try{
 
               
                sendData = (Arrays.toString(files)).getBytes();
-                InetAddress clientIpAddress = receivePacket.getAddress();
+                InetAddress clientIpAddress = receivePacket.getByName("192.168.56.1");
                 
                 int clientPort = receivePacket.getPort();
                 DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, clientIpAddress, clientPort);
@@ -118,7 +118,7 @@ try{
                 DatagramSocket dsoc=new DatagramSocket();
                 
 
-               dsoc.send(new DatagramPacket(arrayfile,arrayfile.length,InetAddress.getLocalHost(),1000));
+               dsoc.send(new DatagramPacket(arrayfile,arrayfile.length,clientIpAddress,1000));
 
                dsoc.close();
                 

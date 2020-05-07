@@ -31,18 +31,25 @@ import java.nio.file.*;
 
 public class Client extends Thread
 {
-         
-public static void main(String[] args) {
+    public int NoofTimesC = 4;
+    public String clientfilesfolder= "C:\\Users\\dell\\Desktop\\clientfolder\\";
+
+    public String clientDownloadFiles= "C:\\Users\\dell\\Downloads\\";
+
+    public static void main(String[] args) {
 
 try{
 
-
-
 //object instatition and threads run start
+    String[] command = {"cmd.exe", "/C", "Start", "samplecli.bat"};
+    Process p =  Runtime.getRuntime().exec(command);
 
-         
-          Client1 threadobj = new Client1();
-              threadobj.start();
+      Client1 threadobj0 = new Client1();
+            threadobj0.run();
+
+
+          //Client2 threadobj1 = new Client2();
+          //    threadobj1.run();
 //object instatition and threads run end
 
 

@@ -25,19 +25,27 @@ import java.nio.file.*;
 
 public class Server 
 {
-            public static void main(String args[])throws IOException{
+    public int NoofTimesS = 4;
+    public String serverfilesfolder= "C:\\Users\\dell\\Desktop\\codes\\networklab\\Serverfolder\\";
+
+    public String ServerDownloadFiles= "C:\\Users\\dell\\Downloads\\";
+
+
+    public static void main(String args[])throws IOException{
 
 try{
 
 
-
-
-
-
 //object instatition and threads run start
 
-              Server1 threadobj = new Server1();
-              threadobj.start();
+              Server1 threadobj0 = new Server1();
+              threadobj0.run();
+
+               String[] command = {"cmd.exe", "/C", "Start", "sampleser.bat"};
+               Process p =  Runtime.getRuntime().exec(command);
+    /// Server2 threadobj1 = new Server2();
+              //threadobj1.run();
+
 
 //object instatition and threads run end 
 

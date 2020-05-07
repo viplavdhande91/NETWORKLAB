@@ -44,18 +44,18 @@ public class clientmain
 	try{ 
         
 
-       // displayfileclient fc = new displayfileclient();
+        displayfileclient fc = new displayfileclient();
           
-          b2b3 objectb2b3 = new b2b3();  
-          Thread b2b3= new Thread(objectb2b3);  
+          client1 objectclient1 = new client1();  
+          Thread clientthread1= new Thread(objectclient1);  
 
-          a1a4 objecta1a4 = new a1a4();  
-          Thread a1a4= new Thread(objecta1a4); 
+          client2 objectclient2 = new client2();  
+          Thread clientthread2= new Thread(objectclient2); 
 
           
-         //   fc.displaycli();
-            a1a4.start();    
-            b2b3.start();
+            fc.displaycli();
+            clientthread1.start();    
+            clientthread2.start();
 
             }
 

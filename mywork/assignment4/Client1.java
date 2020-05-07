@@ -43,7 +43,7 @@ try{
             byte[] receiveData = new byte[1024];  //store incoming data    
             
     
-         InetAddress serverAddress = InetAddress.getByName("127.0.0.1");
+         InetAddress serverAddress = InetAddress.getByName("10.0.2.15");
 
           clientSocket.connect(serverAddress,9090); 
 
@@ -94,7 +94,7 @@ try{
 
                   String choiceclient  = arr[x];
 
-                 InetAddress ip = InetAddress.getByName("127.0.0.1");  
+                 InetAddress ip = InetAddress.getByName("10.0.2.15");  
                   DatagramSocket ds = new DatagramSocket();  
                   
 
