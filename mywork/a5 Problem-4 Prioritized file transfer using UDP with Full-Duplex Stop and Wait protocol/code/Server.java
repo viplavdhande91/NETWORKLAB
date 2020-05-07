@@ -25,6 +25,18 @@ import java.nio.file.*;
 
 public class Server 
 {
+  /* 
+NOTE:
+ 1)FILES IN SERVERFOLDER AND SERVER FOLDER HAS TO BE EQUAL OTHERWISE AFTER FEW FILE TRANSFER EXCEPTION WILL OCCUR
+
+2) SET NoofTimesS EQUALS TO NUMBER OF FILES
+
+3)SET SERVER FOLDER PATH HERE
+
+
+
+
+  */
     public int NoofTimesS = 4;
     public String serverfilesfolder= "C:\\Users\\dell\\Desktop\\codes\\networklab\\Serverfolder\\";
 

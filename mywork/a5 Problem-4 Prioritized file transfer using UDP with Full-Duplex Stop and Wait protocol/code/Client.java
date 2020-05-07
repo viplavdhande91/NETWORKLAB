@@ -31,6 +31,18 @@ import java.nio.file.*;
 
 public class Client extends Thread
 {
+
+  /* 
+NOTE:
+ 1)FILES IN CLIENTFOLDER AND SERVER FOLDER HAS TO BE EQUAL OTHERWISE AFTER FEW FILE TRANSFER EXCEPTION WILL OCCUR
+
+2) SET NoofTimesC EQUALS TO NUMBER OF FILES
+
+3)SET CLIENT FOLDER PATH HERE
+
+
+
+  */
     public int NoofTimesC = 4;
     public String clientfilesfolder= "C:\\Users\\dell\\Desktop\\clientfolder\\";
 
